@@ -49,11 +49,12 @@ try{
                     <?=htmlspecialchars($funcionario['nome'])?>
                 </a>
 
-                <form>
-                    
+                <form method="POST" style="display:inline;">
+                    <input type = "hidden" name="excluir_id" value= "<? $funcionario ['id']?>">
+                    <button type="submit">Excluir</button>
                 </form>
             </li>
+        <? endforeach; ?>
     </ul>
-    
 </body>
 </html>
